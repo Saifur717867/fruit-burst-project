@@ -24,6 +24,13 @@
         .fonts-lato {
             font-family: 'Lato', sans-serif;
         }
+
+        .divider {
+            column-count: 3;
+            column-rule-width: 10px;
+            column-rule-style: dotted;
+
+        }
     </style>
 
 
@@ -110,27 +117,27 @@
                 </div>
             </div>
         </div>
-        <div class="max-w-screen-xl mx-auto p-6 rounded-lg absolute -bottom-20 left-[21%] bg-white shadow-lg">
+        <div class="max-w-screen-xl mx-auto p-6 rounded-lg absolute -bottom-24 left-[21%] bg-white shadow-lg">
             <div class="flex justify-around items-center gap-10 ">
                 <div class="text-center">
                     <img src="./images/fruit1.png" alt="">
-                    <h6>Strawberry</h6>
+                    <h6 class="py-3">Strawberry</h6>
                 </div>
                 <div class="text-center">
                     <img src="./images/fruit2.png" alt="">
-                    <h6>Orange</h6>
+                    <h6 class="py-3">Orange</h6>
                 </div>
                 <div class="text-center">
                     <img src="./images/fruit3.png" alt="">
-                    <h6>Mango</h6>
+                    <h6 class="py-3">Mango</h6>
                 </div>
                 <div class="text-center">
                     <img src="./images/fruit4.png" alt="">
-                    <h6>Strawberry</h6>
+                    <h6 class="py-3">Strawberry</h6>
                 </div>
                 <div class="text-center">
                     <img src="./images/fruit5.png" alt="">
-                    <h6>Propagranate</h6>
+                    <h6 class="py-3">Propagranate</h6>
                 </div>
             </div>
         </div>
@@ -138,11 +145,83 @@
     <!-- header section end  -->
 
     <!-- main section starts  -->
-
     <main>
+        <section class="max-w-screen-xl mx-auto my-52">
+            <div class="flex justify-between items-center">
+                <div class="w-[48%]">
+                    <h3 class="text-4xl font-extrabold py-5">Deal of the day</h3>
+                    <p>Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin
+                        literature from 45 BC, making it over 2000 years old.</p>
+                </div>
+                <div class="flex justify-between items-center">
+                    <div class="px-6">
+                        <h3 class="text-4xl font-extrabold">9</h3>
+                        <p>days</p>
+                    </div>
+                    <img src="./images/Frame.png" alt="">
+                    <div class="px-6">
+                        <h3 class="text-4xl font-extrabold">12</h3>
+                        <p>Hours</p>
+                    </div>
+                    <img src="./images/Frame.png" alt="">
+                    <div class="px-6">
+                        <h3 class="text-4xl font-extrabold">25</h3>
+                        <p>Minutes</p>
+                    </div>
+                    <img src="./images/Frame.png" alt="">
+                    <div class="pl-6">
+                        <h3 class="text-4xl font-extrabold">59</h3>
+                        <p>Seconds</p>
+                    </div>
+                </div>
+            </div>
+            <!-- card section  -->
+            <div class="text-center">
+                <div class="text-center border rounded-md p-14 mt-10">
+                    <div class="flex justify-center">
+                        <img src="./images/fruit6.png" alt="">
+                    </div>
+                    <h3 class="text-base font-bold py-3">12.90$ - 18.85$</h3>
+                    <hr>
+                    <p class="py-3">Apples</p>
+                    <div class="rating rating-lg rating-half py-3">
+                        <input type="radio" name="rating-10" class="rating-hidden" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" checked />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-1" />
+                        <input type="radio" name="rating-10" class="bg-red-500 mask mask-star-2 mask-half-2" />
+                    </div>
+                    <!-- You can open the modal using ID.showModal() method -->
+                    <div class="flex justify-center">
+                        <button class="btn bg-white block text-red-400"
+                            onclick="my_modal_4.showModal()">Details</button>
+                        <dialog id="my_modal_4" class="modal">
+                            <form method="dialog" class="modal-box w-11/12 max-w-5xl">
+                                <div class="flex justify-center">
+                                    <img src="./images/fruit8.png" alt="">
+                                </div>
+                                <h3 class="font-extrabold text-xl">Red Dragon</h3>
+                                <p class="py-4">Professional employees are there for you to pick the most <br> amazing and fresh fruits.</p>
+                                <div class="modal-action inline">
+                                    <!-- if there is a button, it will close the modal -->
+                                    <button class="btn bg-white border-red-500 text-red-500 mr-5">Close</button>
+                                </div>
+                                <button class="btn bg-[#F85559] text-white border-none hover:bg-red-300 my-6 inline">Buy Now</button>
+                            </form>
+                        </dialog>
+                    </div>
+                </div>
+                <button class="btn bg-[#F85559] text-white border-none hover:bg-red-300 my-6">Shop All</button>
+            </div>
+        </section>
 
     </main>
-
     <!-- main section end  -->
 
     <!-- footer section starts  -->
